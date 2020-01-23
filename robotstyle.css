@@ -1,0 +1,144 @@
+body{
+	background-image:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("https://appradar.com/wp-content/uploads/app-icon-redesign-google-play.png");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+h1{
+	text-align:center;
+
+	font-weight: 120px;
+	margin: 10px;
+	font-family: 'Rock Salt', cursive;
+	letter-spacing: 5px;
+}	
+.flex-container {
+	
+	
+	
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+.block{
+	display:block;
+}
+.head,
+.left_arm,
+.torso
+.right_arm,
+.left_leg,
+.right_leg{
+	background-color: blue;
+}
+.head{
+	margin:0px auto;
+	height:150px;
+	width: 200px;
+	border-radius:200px 200px 0 0;
+	
+	margin-bottom: 10px;
+	animation: examplehead 1s linear 0s infinite alternate;
+
+}
+@keyframes examplehead{
+	from{width:200px;}
+	to{width:250px;}
+}
+.eyes{
+	display:flex;}
+.left_eye{
+	background-color: white;
+	border-radius:15px;
+	height:20px;
+	width:20px;
+	position:relative;
+	top:100px;
+	left:40px;
+	
+
+}
+.right_eye{
+		background-color: white;
+	border-radius:15px;
+	height:20px;
+	width:20px;
+	position:relative;
+	top:100px;
+	left:120px;
+
+}
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px;
+	transform:translate(0px,0px); 
+	animation: examplearm 1s linear 0s infinite alternate;
+} 
+@keyframes examplearm{
+	from{transform:translate(0px,0px);	
+	}
+	to{transform:translate(0px,-20px);}
+}
+
+.right_arm { 
+	margin-left: 10px; 
+	background-color: blue;
+	animation: examplerarm 1s linear 0s infinite alternate;
+}
+
+@keyframes examplerarm{
+	from{transform:translate(0px,-20px);	
+	}
+	to{transform:translate(0px,0px);}
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+	background-color: blue;
+} 
+.lower_body{
+	display:flex;
+}
+.left_leg, .right_leg{
+	width: 40px; 
+	height: 120px;
+	border-radius:100px;
+
+}
+.left_leg{
+	margin-left:90px;
+	transform:rotate(0deg);
+	animation: example 1s linear 0s infinite alternate;
+}
+.right_leg{
+	margin-left:40px;
+	animation: example1 1s linear 0s infinite alternate;
+}
+@keyframes example{
+
+	from{transform:rotate(30deg);}
+	to{transform:rotate(-30deg);}
+}
+
+@keyframes example1{
+
+	0%{transform:rotate(0deg);}
+	33%{transform:rotate(30deg);}
+	66%{transform:rotate(-30deg);}
+	100%{transform:rotate(0deg);}
+}
