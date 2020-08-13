@@ -1,2 +1,2 @@
 # androidrobo
-animated android robo using CSS animation
+Just practicing CSS animation to make animated dancing android robo😅😅😅.
